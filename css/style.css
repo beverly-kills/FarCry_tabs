@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+.flex--row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex--col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background: url(../img/BG.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+    width: 600px;
+    min-height: 540px;
+}
+
+.game__menu{
+	display: flex;
+	justify-content: space-around;
+    height: 100px;
+    background-color: #2b3040;
+    list-style: none;
+}
+
+.menu__tab{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    opacity: 0.5;
+    text-transform: uppercase;
+    font: 400 16px 'Lato', sans-serif;
+}
+
+.menu__tab:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menu__tab--active{
+    opacity: 1;
+    border-bottom: solid white 5px;
+    box-sizing: border-box;
+}
+
+.menu__line{
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    height: 5px;
+    color: #ffffff;
+}
+
+.game__window{
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+}
+
+.game__content{
+    padding: 50px 30px;
+    background-color:  #212534;
+    box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+}
+
+.scoring{
+    margin: 20px 0;
+    align-self: center;
+}
+
+.scoring__input{
+	display: none;
+}
+
+.label_rating {
+	float: right;
+	display: block;
+	width: 35px;
+	height: 35px;
+	background: url(../img/graystar.png) no-repeat;
+	cursor: pointer;
+}
+
+.scoring .label_rating:hover, /*Правило для ховера на текущий лейбл*/
+.scoring .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
+.scoring input[type="radio"]:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
+{
+	background: url(../img/ystar.png) no-repeat;
+}
+
+.game__info{
+    display: flex;
+}
+
+.game__title{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.game__poster{
+    width: 37%;
+    min-width: 160px;
+}
+
+.game__description{
+    color:  #b7bacd;
+}
+
+.game__discount{
+    color:  #fedd3f;
+}
+
+.game__price{
+    color:  #ffffff;
+    font-size: 32px;
+}
+
+.game__button{
+    border-radius: 2px;
+    background: none;
+    box-shadow: 0 0 40px 40px #13e28d inset, 0 0 0 0 #13e28d;
+    width: 164px;
+    height: 55px;
+    text-decoration: none;
+    color: #fff;
+    font: 700 16px 'Lato', sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.game__button:hover {
+    box-shadow: 0 0 10px 0 #13e28d inset, 0 0 10px 4px #13e28d;
+    color: #13e28d;
+  }

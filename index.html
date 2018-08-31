@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FarCry 4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+    <div class="game">
+        <ul class="game__menu">
+            <li class="menu__tab">
+                <img src="img/icons/message-text-outline.svg" alt="info"> 
+                information
+            </li>
+            <li class="menu__tab">
+                <img src="img/icons/cards-spade.svg" alt="rate">rating info
+            </li>
+            <li class="menu__tab">
+                <img src="img/icons/basket.svg" alt="buy">where to buy
+            </li>
+        </ul>
+
+        <div class="game__content">
+            <div class="game__info game__window">
+                <div class="flex--col">
+                    <img src="img/poster.jpg" alt="poster" class="game__poster">
+                    <section class="scoring">
+                        <input class="scoring__input" name="rating" value="5" id="rating_5" type="radio" />
+                        <label for="rating_5" class="label_rating"></label>
+                            
+                        <input class="scoring__input" name="rating" value="4" id="rating_4" type="radio" />
+                        <label for="rating_4" class="label_rating"></label>
+                            
+                        <input class="scoring__input" name="rating" value="3" id="rating_3" type="radio" />
+                        <label for="rating_3" class="label_rating"></label>
+                            
+                        <input class="scoring__input" name="rating" value="2" id="rating_2" type="radio" />
+                        <label for="rating_2" class="label_rating"></label>
+                            
+                        <input class="scoring__input" name="rating" value="1" id="rating_1" type="radio" />
+                        <label for="rating_1" class="label_rating"></label>
+                    </section>
+                </div>
+                <div class="flex--col">
+                    <div class="flex--row">
+                        <div>
+                            <h2 class="game__title">FarCry 4</h2>
+                            <p>First Released Nov 17, 2014</p>
+                        </div>
+                        <img src="img/Ellipse 5.png" alt="rate">
+                    </div>
+                    <p class="game__description">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Himalayas
+                        struggling under the regime of a despotic self-appointed king.</p>
+                    <div class="flex--row">
+                        <div>
+                            <p class="game__discount">20% OFF!</p>
+                            <p class="game__price">$59.96</p>
+                        </div>
+                        <a class="game__button flex--row" href="https://store.steampowered.com/app/298110/Far_Cry_4/">buy it now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="game__rate game__window">
+                <p>No data, sorry</p>
+            </div>
+            <div class="game__buy game__window">
+                <p>Come back tomorrow</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
